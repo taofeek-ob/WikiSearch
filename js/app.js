@@ -33,13 +33,13 @@ const generateResult= (results, searchTerm) => {
 
 
 function search(searchTerm) {
-  ResultDisplay.innerHTML= ""
+ 
   const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info|extracts&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${searchTerm}`;
  
     fetch(url)
     .then(response => response.json())
     .then(response => {
-      
+       ResultDisplay.innerHTML= ""
      const e = generateResult(response.query.search, searchTerm)
   ResultDisplay.innerHTML= e
     }
