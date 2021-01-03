@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --primary-color: #00369a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: #fff;
+    margin: 0 20px;
+    height: 100vh;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+h1 {
+    padding: 5px 0;
+    font-size: 1.7rem;
+    color: #111;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: solid 2px #f0f0f0;
+    border-radius: 50px;
+    outline: none;
+    width: 100%;
+}
+
+#searchResult {
+    margin-top: 1rem;
+}
+
+#searchResult article {
+    padding: 0;
+    margin: 20px 0;
+}
+
+#searchResult article h2 {
+    font-size: 1.1rem;
+}
+
+.highlight {
+    background-color: #fff6ea;
+    font-weight: bold;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+html {
+    box-sizing: border-box;
+    background: #f3f3f3;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.clip {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: auto;
+}
+
+.svg--source {
+    display: none;
+}
+
+.svg--icon {
+    width: 40%;
+    max-width: 5rem;
+    height: 100%;
+    max-height: 5rem;
+    display: block;
+    margin: 0 auto;
+    fill: currentColor;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.share {
+    width: 3.5rem;
+    height: 3.2rem;
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+    color: #353c4a;
+    border: 0.125rem solid #f3f3f3;
+    box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+    border-radius: 50%;
+    transition: 250ms;
+}
+
+.share:last-child {
+    margin-right: 0;
+}
+
+.share:focus {
+    outline-color: inherit;
+}
+
+.twitter:hover,
+.twitter:focus {
+    color: #00ACED;
+    box-shadow: 0 0 24px 0 #00ACED;
+}
+
+.github:hover,
+.github:focus {
+    color: #4183c4;
+    box-shadow: 0 0 24px 0 #4183c4;
+}
