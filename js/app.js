@@ -51,7 +51,7 @@ function search(searchTerm) {
   // }
 
   
-  const debounce = (fn, delay=500) => {
+  const debounce = (fn, delay=50) => {
     let timeoutId;
   
     return (...args) => {
